@@ -14,7 +14,7 @@ mkdir -p /docker/target
 3. Переместить из проекта на удаленный сервер в `/docker/target`
 - trex-budget-bot-0.0.1-SNAPSHOT.jar
 
-4. Переместить из проекта на удаленный серверв в `/docker` 
+4. Переместить из проекта на удаленный сервер в `/docker` 
 - .env
 - bot-docker-compose.yml
 - Dockerfile
