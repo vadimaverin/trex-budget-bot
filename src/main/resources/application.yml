@@ -2,13 +2,17 @@ spring:
   application:
     name: trex-budget-bot
   datasource:
-    url: ${SPRING_DATASOURCE_URL}
-    username: ${SPRING_DATASOURCE_USERNAME}
-    password: ${SPRING_DATASOURCE_PASSWORD}
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: update
+#  config:
+#    activate:
+#      on-profile: local
+#    import: optional:secret.properties[.properties]
 bot:
-  botUsername: tgbot
+  botUsername: ${BOT_NAME}
   botToken: ${BOT_TOKEN}

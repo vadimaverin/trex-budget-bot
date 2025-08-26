@@ -107,7 +107,6 @@ class ExpenseMessageValidatorTest {
         String message = "0100,66 Продукты";
         assertTrue(categoryService.existsByName("Продукты"));
         assertTrue(categoryService.existsByAlias("еда"));
-//        assertTrue(categoryService.existsByAlias("тст"));
 
         // When
         ValidationResult result = expenseMessageValidator.validate(message);

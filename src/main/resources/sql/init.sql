@@ -26,3 +26,5 @@ CREATE TABLE IF NOT EXISTS expenses
     category_id BIGINT NOT NULL REFERENCES categories (id),
     description VARCHAR(255)
 );
+
+CREATE DATABASE tgbotdata;
